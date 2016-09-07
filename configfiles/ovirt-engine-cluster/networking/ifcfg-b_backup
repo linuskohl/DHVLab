@@ -1,0 +1,11 @@
+# Bridge for Backup VLAN
+DEVICE				= "b_backup"
+TYPE				= Bridge
+IPADDR				= 10.51.0.1
+NETMASK				= 255.255.255.0
+NETWORK				= 10.51.0.0
+DELAY				= 0
+ONBOOT				= "yes"
+BOOTPROTO			= static
+PEERDNS				= "yes"
+NM_CONTROLLED		= no

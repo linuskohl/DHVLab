@@ -1,0 +1,11 @@
+# NIC2
+# OVirt Management Network &
+# Backup Network
+DEVICE				= NIC2
+NAME				= NIC2
+ONBOOT				= yes
+USERCTL				= no
+TYPE				= Ethernet
+IPV4_FAILURE_FATAL	= no
+IPV6INIT			= no 
+IPV6_FAILURE_FATAL	= no

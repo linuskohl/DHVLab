@@ -1,0 +1,10 @@
+# NIC2 VLAN 20
+# Backup Network
+DEVICE				= NIC2.20
+BRIDGE				= b_backup
+ONBOOT				= yes
+BOOTPROTO			= static
+TYPE				= Ethernet
+VLAN				= yes
+USERCTL				= no
+

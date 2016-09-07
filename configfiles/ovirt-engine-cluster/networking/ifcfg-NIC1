@@ -1,0 +1,18 @@
+# NIC1
+# WAN access
+IPADDR				= EXTERNAL_IP
+NETWORK				= EXTERNAL_NETWORK
+NETMASK				= EXTERNAL_NETMASK
+GATEWAY				= GATEWAY
+USERCTL 			= no
+TYPE    			= "Ethernet"
+DEFROUTE			= "yes"
+PEERDNS				= "yes"
+PEERROUTES			= "yes"
+IPV4_FAILURE_FATAL	= "no"
+IPV6INIT			= "no"
+IPV6_FAILURE_FATAL	= "no"
+NAME				= "NIC1"
+DEVICE				= "NIC1"
+ONBOOT				= "yes"
+

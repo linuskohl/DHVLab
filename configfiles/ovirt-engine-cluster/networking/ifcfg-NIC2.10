@@ -1,0 +1,10 @@
+# NIC2 VLAN 10
+# OVirt Management Network
+DEVICE				= NIC2.10
+BRIDGE				= b_mgmt
+ONBOOT				= yes
+BOOTPROTO			= none
+TYPE				= Ethernet
+VLAN				= yes
+USERCTL				= no
+
