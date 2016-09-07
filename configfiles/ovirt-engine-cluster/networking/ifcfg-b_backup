@@ -1,9 +1,9 @@
 # Bridge for Backup VLAN
 DEVICE				= "b_backup"
 TYPE				= Bridge
-IPADDR				= 10.51.0.1
-NETMASK				= 255.255.255.0
-NETWORK				= 10.51.0.0
+IPADDR				= BACKUPNET_IP
+NETMASK				= BACKUPNET_SUBNETMASK
+NETWORK				= BACKUPNET_NETWORK
 DELAY				= 0
 ONBOOT				= "yes"
 BOOTPROTO			= static
