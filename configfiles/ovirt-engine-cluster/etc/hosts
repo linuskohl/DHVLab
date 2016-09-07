@@ -1,0 +1,30 @@
+# localhost
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+# internet facing addresses
+PUBLIC_CLUSTER_IP CLUSTER    CLUSTER.YOUR_DOMAIN
+PUBLIC_N1_IP      CLUSTER_N1 CLUSTER_N1.YOUR_DOMAIN
+PUBLIC_N2_IP      CLUSTER_N2 CLUSTER_N2.YOUR_DOMAIN
+
+# cluster network
+CLUSTERLAN_CLUSTER_IP       CLUSTER.clan
+CLUSTERLAN_CLUSTER_N1_IP    CLUSTER_N1.clan
+CLUSTERLAN_CLUSTER_N2_IP    CLUSTER_N2.clan
+
+#ovirt managment network 
+CLUSTER_MGMT_IP      CLUSTER.mlan
+CLUSTER_MGMT_N1_IP   CLUSTER_N2.mlan 
+CLUSTER_MGMT_N2_IP   CLUSTER_N2.mlan 
+CLUSTER_MGMT_H1_IP   CLUSTER_H1.mlan
+CLUSTER_MGMT_H2_IP   CLUSTER_H2.mlan
+OVIRT_MGMT_IP        OVIRT.mlan			OVIRT
+
+# backup network
+CLUSTER_BACKUP_IP      CLUSTER.backup
+CLUSTER_BACKUP_N1_IP   CLUSTER_N2.backup
+CLUSTER_BACKUP_N2_IP   CLUSTER_N2.backup
+CLUSTER_BACKUP_H1_IP   CLUSTER_H1.backup
+CLUSTER_BACKUP_H2_IP   CLUSTER_H2.backup
+OVIRT_BACKUP_IP        OVIRT.backup
+BACKUP_IP              BACKUP.backup
