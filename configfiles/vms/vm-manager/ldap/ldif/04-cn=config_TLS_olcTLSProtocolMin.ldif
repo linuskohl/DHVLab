@@ -1,0 +1,5 @@
+#set minimal TLS version to 3.1
+dn: cn=config
+changetype: modify
+add: olcTLSProtocolMin
+olcTLSProtocolMin: 3.1

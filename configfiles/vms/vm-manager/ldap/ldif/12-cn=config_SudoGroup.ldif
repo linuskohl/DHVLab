@@ -1,0 +1,6 @@
+#Add group of users that can sudo
+dn: cn=YOUR_ADMIN_GROUP, ou=Group, dc=YOUR_DOMAIN,dc=YOUR_TLD
+cn: sysops
+gidNumber: YOUR_ADMIN_GROUP_GID
+description: Group can sudo without restriction
+objectclass: posixGroup

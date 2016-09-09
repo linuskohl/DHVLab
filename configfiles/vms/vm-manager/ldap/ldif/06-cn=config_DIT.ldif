@@ -1,0 +1,19 @@
+#create structure
+dn: dc=YOUR_DOMAIN,dc=YOUR_TLD
+dc: YOUR_DOMAIN
+ou: YOUR_DOMAIN dot YOUR_TLD
+objectClass: top
+objectClass: dcObject
+objectClass: organizationalUnit
+
+# People
+dn: ou=People,dc=YOUR_DOMAIN,dc=YOUR_TLD
+ou: People
+objectClass: top
+objectClass: organizationalUnit
+
+# Group
+dn: ou=Group,dc=YOUR_DOMAIN,dc=YOUR_TLD
+ou: Group
+objectClass: top
+objectClass: organizationalUnit

@@ -1,0 +1,14 @@
+#add TLS support and certificates
+dn: cn=config
+changetype: modify
+replace: olcTLSCipherSuite
+olcTLSCipherSuite: HIGH
+-
+replace: olcTLSCertificateFile
+olcTLSCertificateFile: /etc/pki/openldap/certs/cert.pem
+-
+replace: olcTLSCertificateKeyFile
+olcTLSCertificateKeyFile: /etc/pki/openldap/private/key.pem
+-
+replace: olcTLSCACertificateFile
+olcTLSCACertificateFile: /etc/pki/openldap/certs/CAcert.pem

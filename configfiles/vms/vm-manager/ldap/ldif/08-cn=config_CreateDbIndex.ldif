@@ -1,0 +1,9 @@
+#create and define indexes for LDAP
+#http://www.zytrax.com/books/ldap/apa/indeces.html
+dn: olcDatabase={2}hdb,cn=config
+changetype: modify
+add: olcDbIndex
+olcDbIndex: uidNumber,gidNumber,loginShell eq,pres
+olcDbIndex: uid,memberUid eq,pres,sub
+olcDbIndex: nisMapName,nisMapEntry eq,pres,sub
+olcDbIndex: uniqueMember eq,pres

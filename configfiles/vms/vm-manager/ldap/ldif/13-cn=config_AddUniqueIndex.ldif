@@ -1,0 +1,21 @@
+#create unique indexes
+dn: cn=module{0},cn=config
+changetype: add
+objectClass: olcModuleList
+cn: module{0}
+olcModuleLoad: /usr/lib64/openldap/unique.la
+
+dn: olcOverlay=unique,olcDatabase={2}hdb,cn=config
+changetype: add
+objectClass: olcUniqueConfig
+objectClass: olcOverlayConfig
+objectClass: olcConfig
+objectClass: top
+olcOverlay: unique
+
+dn: olcOverlay={4}unique,olcDatabase={2}hdb,cn=config
+changetype: modify
+add: olcUniqueURI
+olcUniqueURI: ldap:///?uid?sub
+olcUniqueURI: ldap:///?uidNumber?sub
+olcUniqueURI: ldap:///?homeDirectory?sub

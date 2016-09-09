@@ -1,0 +1,6 @@
+dn: cn=YOUR_REPLICATION_USER,dc=YOUR_DOMAIN,dc=YOUR_TLD
+cn: YOUR_REPLICATION_USER
+objectClass: top
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+userPassword: {SSHA}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
