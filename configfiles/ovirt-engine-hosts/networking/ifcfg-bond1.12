@@ -1,0 +1,7 @@
+DEVICE=bond1.12
+VLAN=yes
+BRIDGE=clients
+ONBOOT=yes
+MTU=1500
+NM_CONTROLLED=no
+HOTPLUG=no

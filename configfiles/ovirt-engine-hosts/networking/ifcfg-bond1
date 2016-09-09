@@ -1,0 +1,6 @@
+DEVICE=bond1
+BONDING_OPTS='mode=4 miimon=100'
+ONBOOT=yes
+MTU=1500
+NM_CONTROLLED=no
+HOTPLUG=no
