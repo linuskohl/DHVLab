@@ -1,0 +1,13 @@
+* servername has to match the one in dsm.sys
+SErvername XX
+* subdirectories are not backed up automatically
+subdir yes
+* restore last accessdate after backup
+PRESERVELAstaccessdate yes
+* add mountpoints or virtual mount points as <span class="bold-italic">virtualmountpoint</span>. 
+* You cannot use wildcard characters in either the path or directory names.
+* DOMAIN     ALL-LOCAL
+* DOMAIN     ALL-LOCAL -/tmp 
+DOMAIN /
+* virtualmountpoint /etc
+

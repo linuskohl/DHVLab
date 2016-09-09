@@ -1,0 +1,35 @@
+* specify the name of the default server to 
+* which you back up or archive files.
+DEFAULTServer XX
+* specify the name of the server you want to contact 
+* for backup-archive services.
+SErvername XX
+* specify connection method {TCPip,SHAREdmem,V6TCPIP,NAMedpipes}
+COMMmethod V6TCPip
+* specify address + port of the server
+TCPServeraddress XX
+TCPPort XX
+* name of the node you are configuring
+NOdename XX
+* commented out to initially change your password
+* otherwise used to not have to enter the password everytime
+* PASSWORDAccess generate
+SCHEDMODe POlling
+* keep logs for 10 days
+SCHEDLOGRetention 10 D
+errorlogretention 10 D
+SCHEDLOGName /var/log/adsm_sched.log
+errorlogname /var/log/adsm_err.log
+* dismiss administrator schedule 
+schedcmddisabled yes
+SRVPREPOSTSCHeddisabled yes
+SRVPREPOSTSNApdisabled yes
+SCHEDRESTRETRDisabled yes
+ 
+* run before backup
+PRENSchedulecmd "runparts --report /etc/adsm/schedpre.d"
+* run after backup
+POSTschedulecmd "runparts --report /etc/adsm/schedpost.d"
+ 
+* file patterns to include/exclude
+INCLExcl /etc/adsm/inclexcl.d/default

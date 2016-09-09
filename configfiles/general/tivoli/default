@@ -1,0 +1,11 @@
+exclude.dir /dev
+exclude.dir /proc
+exclude.dir /bin
+exclude.dir /lib
+exclude.dir /.../tmp
+exclude.dir /.../Cache
+exclude.dir /.../cache
+exclude.dir /.../.Trash
+exclude /opt/.../*
+exclude /.../core
+exclude ~*
