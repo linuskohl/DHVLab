@@ -1,0 +1,12 @@
+$TTL 1D
+@                     IN      SOA     MANAGER.dmz.YOUR_DOMAIN. YOUR_EMAIL.YOUR_DOMAIN. (
+                              200612060                ; serial
+                              2H                       ; refresh slaves
+                              5M                       ; retry
+                              1W                       ; expire
+                              1M                       ; Negative TTL
+)
+                      IN      NS      MANAGER.dmz.YOUR_DOMAIN.
+XXX                   IN      PTR     MANAGER.dmz.YOUR_DOMAIN.
+XXX                   IN      PTR     WEB.dmz.YOUR_DOMAIN.
+;...

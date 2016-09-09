@@ -1,0 +1,19 @@
+zone "DMZ.YOUR_DOMAIN" IN {
+        type master;
+        file "/etc/named/zones/dmz.YOUR_DOMAIN.zone";
+};
+
+zone "XXX.XXX.XXX.in-addr.arpa" IN {
+        type master;
+        file "/etc/named/zones/XXX.XXX.XXX.zone";
+};
+
+zone "nodes.YOUR_DOMAIN" IN {
+        type master;
+        file "/etc/named/zones/nodes.YOUR_DOMAIN.zone";
+};
+
+zone "XXX.XXX.XXX.in-addr.arpa" IN {
+        type master;
+        file "/etc/named/zones/XXX.XXX.XXX.zone";
+};
