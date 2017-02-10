@@ -1169,7 +1169,9 @@ body.page-Main_Page.action-view #mw-content-text .details {
 	background-color: transparent;
 	border-bottom: none;
 }
-#mw-content-text .project p {
+#mw-content-text .project p,
+#mw-content-text .moduls p,
+#mw-content-text .manuals p  {
 	hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
