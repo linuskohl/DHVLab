@@ -941,9 +941,13 @@ body.page-Main_Page.action-view .head div a {
 	padding: 0.9375em 1.875em;
 	font-size: 0.9rem;
 }
+body.page-Main_Page.action-view .head div p {
+	text-align: center;
+}
 .button.white,
 body.page-Main_Page.action-view .head div a {
 	color: #173753;
+	border-bottom: transparent;
 }
 body.page-Main_Page.action-view .head div a:hover,
 body.page-Main_Page.action-view .head div a:focus,
@@ -1026,7 +1030,7 @@ button:hover, button:focus {
 	font-family: FontAwesome;
 	content: "\f090";
 	position: absolute;
-	top: 0;
+	top: .2px;
 	left: 0;
 }
 #mw-content-text ul {
@@ -1138,6 +1142,7 @@ body.page-Main_Page.action-view #mw-content-text .image {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #143049;
+	background-image: url(http://dhvlab.gwi.uni-muenchen.de/images/2/26/Background.png);
 	font-size: 0.9rem;
 }
 body.page-Main_Page.action-view #mw-content-text .image,
@@ -1162,13 +1167,16 @@ body.page-Main_Page.action-view #mw-content-text .details {
 	hyphens: auto;
 	-webkit-hyphens: auto;
 }
-#mw-content-text .image span {
+#mw-content-text .image div {
 	background: #fff;
 	position: absolute;
 	width: 100%;
 	bottom: 0;
 	left: 0;
 	padding: 0.5em;
+}
+#mw-content-text .image div p {
+	text-align: center;
 }
 .midblue {
 	background-color: #173753;
