@@ -1030,7 +1030,7 @@ button:hover, button:focus {
 	font-family: FontAwesome;
 	content: "\f090";
 	position: absolute;
-	top: .2px;
+	top: -2px;
 	left: 0;
 }
 #mw-content-text ul {
@@ -1159,6 +1159,15 @@ body.page-Main_Page.action-view #mw-content-text .details {
 }
 #mw-content-text .row.team .image {
 	margin: 0 1.205em;	
+}
+#mw-content-text .row.team .image div p,
+#mw-content-text .row.project.image div p {
+	margin-bottom: 0;
+}
+#mw-content-text .row.team .image div p a,
+#mw-content-text .row.project .image div p a {
+	background-color: transparent;
+	border-bottom: none;
 }
 #mw-content-text .project p {
 	hyphens: auto;
