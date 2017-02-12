@@ -5,8 +5,11 @@ body {
 	line-height: 1.5;
 	background-color: #f9f9f9;
 	color: #173753;
+}
+#page-content {
 	position: relative;
 	padding-bottom: 3em;
+	min-height: 100%;
 }
 p {
 	margin-bottom: .25em;
