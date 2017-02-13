@@ -1248,6 +1248,9 @@ body.page-Main_Page.action-view #mw-content-text .image div.thumb {
 body.page-Main_Page.action-view #mw-content-text .image div.thumb .thumbcaption {
 	display: none;
 }
+body.page-Main_Page.action-view #mw-content-text .image div.thumb .thumbinner{
+	width: 100%;
+}
 body.page-Main_Page.action-view #mw-content-text .image div p {
 	text-align: center;
 }
@@ -1365,7 +1368,6 @@ body.page-Main_Page.action-view .row.head h2 {
 }
 }
 #mw-content-text .row .highlight {
-	margin: 1.875rem auto 0 auto;
 	color: #e12986;
 }
 #bodyContent {
