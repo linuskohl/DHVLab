@@ -1249,7 +1249,7 @@ body.page-Main_Page.action-view #mw-content-text .image div.thumb .thumbcaption 
 	display: none;
 }
 body.page-Main_Page.action-view #mw-content-text .image div.thumb .thumbinner{
-	width: 100%;
+	width: 100% !important;
 }
 body.page-Main_Page.action-view #mw-content-text .image div p {
 	text-align: center;
