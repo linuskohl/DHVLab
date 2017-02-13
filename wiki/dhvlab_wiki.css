@@ -156,6 +156,7 @@ footer.row ul.views.columns li {
 	float: none;
 	margin-left: 2em;
 	width: 95%;
+	list-style: none;
 }
 #catlinks {
 	border: 0 solid #aaa;
@@ -203,7 +204,10 @@ body.page-Main_Page.action-view h3 {
 	font-weight: bold;
 }
 p, ul, ol, .mw-highlight, ol.references, b, u, i,
-#catlinks .label, fieldset {
+#catlinks .label, fieldset,
+#mw-content-text .mw-changeslist-empty,
+fieldset .mw-collapsible-content,
+#preferences .mw-prefs-buttons {
 	font-size: 0.9rem;
 }
 .head h2 {
@@ -947,7 +951,7 @@ body.page-Main_Page.action-view .row.head h2 {
 	padding: 0;
 }
 .button,
-body.page-Main_Page.action-view .head div a {
+body.page-Main_Page.action-view .head div p.bt a {
 	border-radius: 1.875em;
 	padding: 0.9375em 1.875em;
 	font-size: 0.9rem;
@@ -956,12 +960,12 @@ body.page-Main_Page.action-view .head div p {
 	text-align: center;
 }
 .button.white,
-body.page-Main_Page.action-view .head div a {
+body.page-Main_Page.action-view .head div p.bt a {
 	color: #173753;
 	border-bottom: transparent;
 }
-body.page-Main_Page.action-view .head div a:hover,
-body.page-Main_Page.action-view .head div a:focus,
+body.page-Main_Page.action-view .head div p.bt a:hover,
+body.page-Main_Page.action-view .head div p.bt a:focus,
 button:hover, button:focus {
 	background-color: #30638e;
 	color: #ffffff;
@@ -1050,11 +1054,22 @@ button:hover, button:focus {
 	margin: .5em 1.25em .5em 1.6em;
 	padding: 0;
 }
+#mw-content-text ul#filetoc {
+	margin-left: 0;
+	padding-left: 1.6em;
+}
 #mw-content-text #toc {
 	margin-bottom: 2.085em;
 }
 #mw-content-text #toc .toctitle {
 	margin-bottom: 2.085em;
+}
+table.mw_metadata {
+	margin-top: 1.6em;
+    margin-left: 0;
+}
+h5#siteSub.subtitle {
+	padding: 0 1.875em;
 }
 body.page-Main_Page.action-view #mw-content-text ul {
 	margin: 2.085em 4.82em 0 4.82em;
@@ -1147,18 +1162,24 @@ body.page-Main_Page.action-view #mw-content-text .row.project li a:hover {
 	content: '\f1c4';
 	margin-right: 1.6em;
 }
-body.page-Main_Page.action-view #mw-content-text .image {
-	padding-bottom: 120%;
+#mw-content-text .row.team .image,
+#mw-content-text .row.project .image {
+	padding-bottom: 115%;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #143049;
 	background-image: url(http://dhvlab.gwi.uni-muenchen.de/images/2/26/Background.png);
 	font-size: 0.9rem;
+	overflow: hidden;
 }
 body.page-Main_Page.action-view #mw-content-text .image,
 body.page-Main_Page.action-view #mw-content-text .details {
 	margin: 0 1.875rem;
+}
+#mw-content-text .row.team .image .thumb,
+#mw-content-text .row.project .image .thumb {
+	padding: 0;
 }
 #mw-content-text .large-1-2 .image {
 	padding-bottom: 135%;
@@ -1180,6 +1201,24 @@ body.page-Main_Page.action-view #mw-content-text .details {
 	background-color: transparent;
 	border-bottom: none;
 }
+#mw-content-text .row.team .image:hover img,
+#mw-content-text .row.project .image:hover img {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+} 
+#mw-content-text .row.team .image img,
+#mw-content-text .row.project .image img{
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+}
 #mw-content-text .project p,
 #mw-content-text .moduls p,
 #mw-content-text .manuals p  {
@@ -1189,7 +1228,7 @@ body.page-Main_Page.action-view #mw-content-text .details {
 	hyphens: auto;
 	-webkit-hyphens: auto;
 }
-#mw-content-text .image div {
+body.page-Main_Page.action-view #mw-content-text .image div.bottom {
 	background: #fff;
 	position: absolute;
 	width: 100%;
@@ -1197,7 +1236,19 @@ body.page-Main_Page.action-view #mw-content-text .details {
 	left: 0;
 	padding: 0.5em;
 }
-#mw-content-text .image div p {
+body.page-Main_Page.action-view #mw-content-text .image div.thumb {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+}
+body.page-Main_Page.action-view #mw-content-text .image div.thumb .thumbcaption {
+	display: none;
+}
+body.page-Main_Page.action-view #mw-content-text .image div p {
 	text-align: center;
 }
 .midblue {
@@ -1262,11 +1313,16 @@ body.page-Main_Page.action-view #page-content .large-12.columns #content {
 	display: none;
 	content: "";
 }
+#mw-content-text .row .highlight {
+	margin-top: 0 !important;
+}
 #mw-content-text .row .highlight p a {
 	padding: 0;
+	border-bottom: 1px dotted #e12986;
 }
 #mw-content-text .row .highlight p {
     margin: 0 1.875em;
+    padding: 0;
 }
 body.page-Main_Page.action-view #mw-content-text .manuals ul {
     margin: 1.875rem 1.875rem 0 1.875rem;
@@ -1274,8 +1330,16 @@ body.page-Main_Page.action-view #mw-content-text .manuals ul {
 body.page-Main_Page.action-view #mw-content-text .manuals .large-2.columns:last-child {
 	margin-top: 1.875rem;
 }
+body.page-Main_Page.action-view #mw-content-text .project .large-1-2.columns,
+body.page-Main_Page.action-view #mw-content-text .project .large-2-1.columns {
+	float: none;
+	width: auto;
+}
+body.page-Main_Page.action-view #mw-content-text .project .large-1-2 .image {
+    padding-bottom: 135%;
+}
 body.page-Main_Page.action-view #mw-content-text .project .large-1-2.columns {
-	padding: 1.875rem 1.875rem 0 1.875rem;
+	margin: 1.875rem 1.875rem 0 1.875rem;
 }
 body.page-Main_Page.action-view #mw-content-text .project .image, 
 body.page-Main_Page.action-view #mw-content-text .project .details {
