@@ -1281,7 +1281,8 @@ body.page-Main_Page.action-view #navwrapper {
 #mw-content-text .row .row div,
 #mw-content-text .row.project,
 #footer,
-#page-content .large-12.columns #content {
+#page-content .large-12.columns #content,
+#further .row.overview {
 	max-width: 80rem;
 	margin-right: auto;
 	margin-left: auto;
