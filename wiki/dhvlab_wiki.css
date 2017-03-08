@@ -192,10 +192,12 @@ h2, h3, h4, h5 {
 }
 body.page-Main_Page.action-view h2,
 body.page-Main_Page.action-view h3,
+#further h3,
 body.page-Main_Page.action-view h4 {
 	margin-top: 0;
 }
-body.page-Main_Page.action-view h3 {
+body.page-Main_Page.action-view h3,
+#further h3 {
 	font-size: 1.125rem;
 	font-weight: bold;
 }
