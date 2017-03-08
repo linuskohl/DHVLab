@@ -84,10 +84,6 @@ footer.row {
 	color: #ffffff;
 	background-color: #143049;
 	padding-top: 0.6rem;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 3em;
 }
 footer.row a {
     color: #ffffff;
@@ -918,7 +914,8 @@ code {
 .row .row {
 	margin: 0;
 }
-.row .row .row {
+.row .row .row,
+#further .overview.row {
 	padding: 3rem 0;
 }
 .row .row .row.team {
@@ -1048,7 +1045,8 @@ button:hover, button:focus {
 	top: -2px;
 	left: 0;
 }
-#mw-content-text ul {
+#mw-content-text ul,
+#further ul {
 	text-align: left;
 	list-style: none;
 	margin: .5em 1.25em .5em 1.6em;
@@ -1071,10 +1069,12 @@ table.mw_metadata {
 h5#siteSub.subtitle {
 	padding: 0 1.875em;
 }
-body.page-Main_Page.action-view #mw-content-text ul {
+body.page-Main_Page.action-view #mw-content-text ul,
+#further ul {
 	margin: 2.085em 4.82em 0 4.82em;
 }
-#mw-content-text ul li:before {
+#mw-content-text ul li:before,
+#further ul li:before {
 	font-family: FontAwesome;
 	content: '\f0da';
 	display: inline-block;
@@ -1082,21 +1082,26 @@ body.page-Main_Page.action-view #mw-content-text ul {
 	width: 1.875rem;
 	position: absolute;
 }
-#mw-content-text ul li {
+#mw-content-text ul li,
+#further ul li {
 	padding-left: 1.875rem;
 }
-body.page-Main_Page.action-view #mw-content-text ul li:before {
+body.page-Main_Page.action-view #mw-content-text ul li:before,
+#further ul li:before {
 	margin-left: -3.75rem;
 	width: 3.75rem;
 }
-body.page-Main_Page.action-view #mw-content-text ul li {
+body.page-Main_Page.action-view #mw-content-text ul li,
+#further ul li {
 	padding-left: 3.75rem;
 }
-body.page-Main_Page.action-view #mw-content-text ul li:before {
+body.page-Main_Page.action-view #mw-content-text ul li:before,
+#further ul li:before {
 	margin: 0 2.085em 0 -2.085em;
 	width: 0;
 }
 #mw-content-text li a, 
+#further li a,
 #mw-content-text .row.project a,
 #mw-content-text #toc li a {
 	color: inherit;
@@ -1249,7 +1254,7 @@ body.page-Main_Page.action-view #mw-content-text .image div.thumb {
 body.page-Main_Page.action-view #mw-content-text .image div.thumb .thumbcaption {
 	display: none;
 }
-body.page-Main_Page.action-view #mw-content-text .image div.thumb .thumbinner{
+body.page-Main_Page.action-view #mw-content-text .image div.thumb .thumbinner {
 	width: 100% !important;
 }
 body.page-Main_Page.action-view #mw-content-text .image div p {
@@ -1259,15 +1264,13 @@ body.page-Main_Page.action-view #mw-content-text .image div p {
 	background-color: #173753;
 	color: #ffffff;
 }
-body.page-Main_Page.action-view #mw-content-text .overview ul,
-#mw-content-text .overview ul {
+#further .overview ul {
     margin: 2.085em 1.205em 0 1.205em;
 }
 body.page-Main_Page.action-view #mw-content-text .manuals ul {
     margin-left: 1.875rem;
 }
-body.page-Main_Page.action-view #mw-content-text .overview ul a,
-#mw-content-text .overview ul a {
+#further .overview ul a {
     border-bottom: none;
 }
 #mw-content-text .contact p {
@@ -1355,10 +1358,10 @@ body.page-Main_Page.action-view #mw-content-text .team .columns.large-4 .image {
 body.page-Main_Page.action-view #mw-content-text .team .columns.large-4:last-child .image {
     margin-bottom: 0;
 }
-body.page-Main_Page.action-view #mw-content-text .overview .columns.large-4 {
+#further .overview .columns.large-4 {
 	margin-top: 2.085em;
 }
-body.page-Main_Page.action-view #mw-content-text .overview .columns.large-4:first-child {
+#further .overview .columns.large-4:first-child {
 	margin-top: 0;
 }
 body.page-Main_Page.action-view .row.head h2 {
