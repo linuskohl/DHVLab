@@ -25,6 +25,12 @@ a#actions-button {
 	top: 0.9375rem;
 	right: 0.9375rem;
 }
+p.magenta {
+	color: #e12986;
+}
+p.magenta a {
+	border-bottom: 1px dotted #e12986;	
+}
 .editButtons {
 	margin-top: 1.875em;
 	font-size: 0.9rem;
