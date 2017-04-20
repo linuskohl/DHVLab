@@ -26,10 +26,10 @@ a#actions-button {
 	right: 0.9375rem;
 }
 p.magenta {
-	color: #e12986;
+	color: #e12986 !important;
 }
 p.magenta a {
-	border-bottom: 1px dotted #e12986;	
+	border-bottom: 1px dotted #e12986 !important;	
 }
 .editButtons {
 	margin-top: 1.875em;
