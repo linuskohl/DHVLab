@@ -974,7 +974,7 @@ button:hover, button:focus {
 .top-bar-section .has-dropdown > a {
 	padding: 0 0.9375rem !important;
 }
-.top-bar-section .has-dropdown {
+.top-bar-section .active {
 	width: 3em;
 }
 .top-bar-section li.active:not(.has-form) a:hover:not(.button) {
