@@ -791,7 +791,8 @@ table tr td {
 }
 li#footer-privacy, 
 li#footer-about, 
-li#footer-disclaimer {
+li#footer-disclaimer,
+li#footer-login {
 	float: left;
 	margin-right: 2em;
 	line-height: 30px;
