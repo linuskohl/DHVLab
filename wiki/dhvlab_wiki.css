@@ -1028,7 +1028,7 @@ button:hover, button:focus {
 #mw-content-text .row .highlight p {
 	margin-right: 2.41em;
 	margin-bottom: 0;
-	padding: 0.6em 0;
+	padding: 0.3em 0;
 }
 #mw-content-text .row .highlight p a {
 	position: relative;
@@ -1043,8 +1043,12 @@ button:hover, button:focus {
 	font-family: FontAwesome;
 	content: "\f090";
 	position: absolute;
-	top: -2px;
-	left: 0;
+	left: 2px;
+	top: 1px;
+	font-size: 90%;
+}
+#mw-content-text .row .highlight p span.pw-forget a::before {
+	content: "\f13e";
 }
 #mw-content-text ul,
 #further ul {
