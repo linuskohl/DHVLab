@@ -1142,13 +1142,14 @@ body.page-Main_Page.action-view #mw-content-text .row.project ul {
 	margin-bottom: 0;
 }
 #mw-content-text .row.moduls .large-4 div,
-#mw-content-text .row.moduls .large-4 a.box {
+#mw-content-text .row.moduls .large-4 a {
 	color: inherit;
 	display: block;
 	transition: background 300ms ease-out;
 	padding: 1.875em;
 }
-#mw-content-text .row.moduls .large-4 div:hover {
+#mw-content-text .row.moduls .large-4 div:hover,
+#mw-content-text .row.moduls .large-4 a:hover{
 	background-color: #f4f4f4;
 	border-radius: 4px;
 }
