@@ -1141,7 +1141,8 @@ body.page-Main_Page.action-view #mw-content-text .row.project ul {
 #mw-content-text .large-2-1 p:last-child {
 	margin-bottom: 0;
 }
-#mw-content-text .row.moduls .large-4 div {
+#mw-content-text .row.moduls .large-4 div,
+#mw-content-text .row.moduls .large-4 a.box {
 	color: inherit;
 	display: block;
 	transition: background 300ms ease-out;
