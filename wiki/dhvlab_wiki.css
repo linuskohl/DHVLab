@@ -1020,6 +1020,12 @@ button:hover, button:focus {
 .large-2 p, .large-2-1 p {
 	margin: 0 1.875rem;
 }
+#mw-content-text .row .highlight {
+	margin-top: 1.875em;
+}
+#mw-content-text .row .highlight::before {
+	clear: both;	
+}
 #mw-content-text .row .highlight i.fa {
 	font-size: 3.75rem;
 	margin-left: 0.5em;
