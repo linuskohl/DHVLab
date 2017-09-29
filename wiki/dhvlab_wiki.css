@@ -898,7 +898,7 @@ body.page-Main_Page.action-submit #tagline {
 	display: none;
 }
 .blue {
-	background: #143049 url(https://dhvlab.gwi.uni-muenchen.de/images/2/26/Background.png) no-repeat center center;
+	background: #143049 url(//dhvlab.gwi.uni-muenchen.de/images/2/26/Background.png) no-repeat center center;
 	background-size: contain;
 	color: #ffffff;
 }
@@ -1189,7 +1189,7 @@ body.page-Main_Page.action-view #mw-content-text .row.project li a:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #143049;
-	background-image: url(http://dhvlab.gwi.uni-muenchen.de/images/2/26/Background.png);
+	background-image: url(//dhvlab.gwi.uni-muenchen.de/images/2/26/Background.png);
 	font-size: 0.9rem;
 	overflow: hidden;
 }
