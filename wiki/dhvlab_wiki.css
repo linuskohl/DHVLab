@@ -962,6 +962,7 @@ body.page-Main_Page.action-view .head div p {
 body.page-Main_Page.action-view .head div p.bt a {
 	color: #173753;
 	border-bottom: transparent;
+	min-width: 200px;
 }
 body.page-Main_Page.action-view .head div p.bt a:hover,
 body.page-Main_Page.action-view .head div p.bt a:focus,
@@ -1106,6 +1107,9 @@ body.page-Main_Page.action-view #mw-content-text ul li:before,
 body.page-Main_Page.action-view #mw-content-text ul li,
 #further ul li {
 	padding-left: 3.75rem;
+}
+body.page-Main_Page.action-view #mw-content-text ul li {
+	padding-left: 2rem;
 }
 body.page-Main_Page.action-view #mw-content-text ul li:before,
 #further ul li:before {
