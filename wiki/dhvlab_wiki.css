@@ -1402,3 +1402,11 @@ body.page-Main_Page.action-view #bodyContent {
 body.page-DHVLab_Wiki_About #mw-content-text h3 {
 	margin-top: 0;
 }
+
+.fancybutton {
+   background-color: #e12b87 !important;
+}
+
+.fancybutton a {
+  background: none !important;
+}
