@@ -1,0 +1,48 @@
+# DHVLab QEMU Desktop VM
+# Copyright (C) 2018 Linus Kohl <linus@munichresearch.com>
+# Permission to copy and modify is granted under the MIT License
+# Last revised 22/2/2018
+
+sys-fs/lvm2 lvm2create_initrd
+sys-boot/grub device-mapper
+>=dev-libs/elfutils-0.170-r1 static-libs
+sys-apps/util-linux build
+sys-libs/ncurses -gpm
+sys-apps/systemd build
+sys-kernel/genkernel-next cryptsetup dmraid mdadm
+sys-apps/busybox -pam
+dev-db/mariadb -server latin1 -jdbc
+dev-db/mysql -server latin1 -jdbc
+virtual/mysql -server
+>=x11-libs/libdrm-2.4.88 libkms
+>=media-libs/mesa-17.2.8 xa
+>=media-video/vlc-2.2.8-r1 vorbis
+>=sys-apps/dbus-1.10.18 user-session
+kde-plasma/plasma-desktop -gtk2 -gtk3
+>=net-fs/samba-4.5.15 client
+>=media-libs/libsdl2-2.0.4 sound
+net-misc/tigervnc server java gnutls
+>=app-crypt/pinentry-1.0.0-r2 gnome-keyring
+media-libs/libcanberra alsa
+>=media-libs/mesa-17.2.8 gles2
+media-sound/pulseaudio -udev
+>=sys-libs/glibc-2.25-r10 nscd
+>=dev-libs/cyrus-sasl-2.1.26-r9 kerberos
+>=net-dns/bind-tools-9.11.2_p1 gssapi
+>=net-nds/openldap-2.4.44 sasl
+>=dev-vcs/subversion-1.9.7 -dso perl
+>=app-text/ghostscript-gpl-9.21 cups
+>=dev-libs/xmlsec-1.2.24-r1 nss
+sys-auth/consolekit pm-utils
+>=x11-libs/qwt-6.1.3-r1 qt4
+>=dev-python/PyQt4-4.12.1 sql
+x11-libs/qwtpolar -qt5 qt4
+dev-qt/qtwebengine bindist
+>=x11-libs/qwt-6.1.3-r1 designer
+>=sci-libs/gdal-2.2.3-r1 geos
+sci-geosciences/qgis georeferencer mapserver postgres
+x11-base/xorg-server xnest
+net-misc/tigervnc -java
+net-misc/owncloud-client dolphin
+dev-java/oracle-jdk-bin  alsa
+dev-java/oracle-jre-bin alsa

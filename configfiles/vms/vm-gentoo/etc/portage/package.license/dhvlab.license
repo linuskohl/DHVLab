@@ -1,0 +1,8 @@
+# DHVLab QEMU Desktop VM
+# Copyright (C) 2018 Linus Kohl <linus@munichresearch.com>
+# Permission to copy and modify is granted under the MIT License
+# Last revised 22/2/2018
+
+>=www-client/google-chrome-64.0.3282.167 google-chrome
+>=dev-java/oracle-jdk-bin-1.8.0.162:1.8 Oracle-BCLA-JavaSE
+>=dev-java/oracle-jre-bin-1.8.0.162:1.8 Oracle-BCLA-JavaSE

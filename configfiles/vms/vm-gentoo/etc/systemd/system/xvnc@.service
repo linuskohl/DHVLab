@@ -1,0 +1,14 @@
+# DHVLab QEMU Desktop VM
+# Copyright (C) 2018 Linus Kohl <linus@munichresearch.com>
+# Permission to copy and modify is granted under the MIT License
+# Last revised 22/2/2018
+
+[Unit]
+Description=XVNC Per-Connection Daemon
+
+[Service]
+ExecStart=-/usr/bin/Xvnc -inetd -query localhost -geometry 1344x768 -depth 16 -once -SecurityTypes=None -localhost -desktop "DHVLab Desktop"
+User=nobody
+Group=tty
+StandardInput=socket
+StandardError=journal
